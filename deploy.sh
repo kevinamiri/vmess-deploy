@@ -7,7 +7,7 @@
 #
 
 PORT=80
-UUID=$(cat /proc/sys/kernel/random/uuid)
+UUID='18c60938-c005-4a26-a9c2-b9f907dae56e'
 IP=$(hostname -I | cut -d' ' -f1)
 CONFIGNAME="config.json"
 CONFIGLOGLEVEL='info'
