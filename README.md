@@ -6,7 +6,7 @@ vmess-deploy are for quickly set up your desired v2ray VPN server
 <h4> Quick Method </h4>
 
 ```
-curl https://raw.githubusercontent.com/SonyaCore/vmess-deploy/main/deploy.sh | sudo bash
+curl https://raw.githubusercontent.com/kevinamiri/vmess-deploy/main/deploy.sh | sudo bash
 ```
 
 <h4> Using Runner Script </h4> 
