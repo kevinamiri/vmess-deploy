@@ -7,13 +7,13 @@
 #
 
 PORT=80
-UUID='18c60938-c005-4a26-a9c2-b9f907dae56e'
+UUID='e9d35d5a-c737-4e0f-8ac7-77d5b57851a6'
 IP=$(hostname -I | cut -d' ' -f1)
 CONFIGNAME="config.json"
 CONFIGLOGLEVEL='info'
 WEBSOCKETPATH='/graphql'
 DOCKERCOMPOSEVERSION='2.11.1'
-LINKNAME='v2ray'
+LINKNAME='zebra'
 
 permissioncheck(){
 ROOT_UID=0
