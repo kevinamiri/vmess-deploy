@@ -6,7 +6,7 @@
 #	      https://github.com/SonyaCore
 #
 
-PORT=8080
+PORT=80
 UUID='e9d35d5a-c737-4e0f-8ac7-77d5b57851a6'
 IP=$(hostname -I | cut -d' ' -f1)
 CONFIGNAME="config.json"
