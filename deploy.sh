@@ -59,13 +59,13 @@ cat > $CONFIGNAME <<CONFIG
           {
             "id": "e9d35d5a-c737-4e0f-8ac7-77d5b57851a6",
             "level": 1,
-            "alterId": 64,
+            "alterId": 4,
             "email": "client@example.com"
           },
           {
             "id": "18c60938-c005-4a26-a9c2-b9f907dae56e",
             "level": 1,
-            "alterId": 64,
+            "alterId": 4,
             "email": "client1@example.com"
           }
         ],
