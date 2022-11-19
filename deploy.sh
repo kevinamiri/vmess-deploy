@@ -7,13 +7,13 @@
 #
 
 PORT=80
-UUID='e9d35d5a-c737-4e0f-8ac7-77d5b57851a6'
+UUID="UUID='e9d35d5a-c737-4e0f-8ac7-77d5b57851a6'"
 IP=$(hostname -I | cut -d' ' -f1)
 CONFIGNAME="config.json"
 CONFIGLOGLEVEL='error'
 WEBSOCKETPATH='/graphql'
 DOCKERCOMPOSEVERSION='2.11.1'
-LINKNAME='zebra'
+LINKNAME='v2ray'
 
 permissioncheck(){
 ROOT_UID=0
@@ -33,7 +33,7 @@ cat > docker-compose.yaml <<DOCKER
 version: '3'
 services:
   v2ray:
-    image: v2fly/v2fly-core:v4.45.2
+    image: v2fly/v2fly-core
     restart: always
     network_mode: host
     environment:
@@ -58,16 +58,10 @@ cat > $CONFIGNAME <<CONFIG
       "settings": {
         "clients": [
           {
-            "id": "e9d35d5a-c737-4e0f-8ac7-77d5b57851a6",
+            "id": "$UUID",
             "level": 1,
-            "alterId": 4,
+            "alterId": 0,
             "email": "client@example.com"
-          },
-          {
-            "id": "18c60938-c005-4a26-a9c2-b9f907dae56e",
-            "level": 1,
-            "alterId": 4,
-            "email": "client1@example.com"
           }
         ],
         "disableInsecureEncryption": true
