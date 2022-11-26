@@ -58,12 +58,6 @@ cat > $CONFIGNAME <<CONFIG
       "settings": {
         "clients": [
           {
-            "id": "$UUID",
-            "level": 1,
-            "alterId": 0,
-            "email": "client@example.com"
-          },
-          {
             "id": "e9d35d5a-c737-4e0f-8ac7-77d5b57851a6",
             "level": 1,
             "alterId": 64,
